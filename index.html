@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ChestherTech | Smart Security & Low-Voltage Systems</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-brand-light text-brand-dark antialiased font-sans">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fa-solid fa-shield-halved navbar-icon"></i>
+                <span class="navbar-title">Chesther<span class="navbar-title-accent">Tech</span></span>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="navbar-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-cta">Get a Quote</a>
+            </div>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-menu-link">Home</a>
+                <a href="#about" class="mobile-menu-link">About</a>
+                <a href="#services" class="mobile-menu-link">Services</a>
+                <a href="#portfolio" class="mobile-menu-link">Projects</a>
+                <a href="#contact" class="mobile-menu-link mobile-menu-link-cta">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <!-- Add your original hero background image here:
+                 <img src="images/your-hero-background.jpg" alt="Security background" class="hero-bg-image">
+            -->
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-bg-accent-red"></div>
+            <div class="hero-bg-accent-cyan"></div>
+                <img id="hero-bg-image" src="" alt="" class="hero-bg-image" style="display:none;">
+        </div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    <span id="hero-badge">Smart security for homes and businesses</span>
+                </div>
+                <h1 id="hero-title" class="hero-title">
+                    Security systems that look premium without feeling crowded.
+                </h1>
+                <p id="hero-description" class="hero-description">
+                    ChestherTech designs and installs CCTV, access control, alarm systems, structured cabling, and remote monitoring setups with a clean finish and practical coverage.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="hero-btn hero-btn-primary">
+                        <i class="fa-solid fa-phone-volume"></i> Request a Free Survey
+                    </a>
+                    <a href="#portfolio" class="hero-btn hero-btn-secondary">
+                        <i class="fa-solid fa-camera"></i> View Sample Projects
+                    </a>
+                </div>
+                <div class="hero-tags">
+                    <span class="hero-tag">24/7 remote access</span>
+                    <span class="hero-tag">4K clear footage</span>
+                    <span class="hero-tag">Fast site assessment</span>
+                    <span class="hero-tag">Clean installation finish</span>
+                </div>
+            </div>
+            <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-delay="150">
+                <div class="hero-image-glow"></div>
+                <div class="hero-image-container" style="border:none;background:transparent;box-shadow:none;padding:0;">
+                    <img id="hero-image" src="uploads/e6872da4-ee8a-448b-88dc-c498b50e5c2d.png" alt="ChestherTech security system with cameras, monitor, and mobile access" class="hero-image" style="width:100%;height:auto;object-fit:contain;object-position:center;display:block;">
+                </div>
+                <div class="hero-box">
+                    <div class="hero-box-content">
+                        <div class="hero-box-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <p class="hero-box-text-label">Why clients choose us</p>
+                            <p class="hero-box-text-title">Clean layouts, practical coverage, and easy-to-use systems.</p>
+                        </div>
+                    </div>
+                    <p class="hero-box-description">
+                        We focus on neat cable management, practical camera placement, simple mobile viewing, and systems sized to the property.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Services Summary -->
+    <section id="about" class="about-section" data-aos="fade-up" data-aos-delay="300">
+        <div class="about-grid">
+            <div class="about-left">
+                <p id="about-label" class="about-label">About ChestherTech</p>
+                <h2 id="about-title" class="about-title">A security partner built for real-world properties.</h2>
+                <p id="about-description" class="about-description">ChestherTech helps property owners protect people, assets, and daily operations with practical systems that are easy to use and built to last.</p>
+                <div id="about-items" class="about-items">
+                    <div class="about-item">
+                        <div class="about-item-icon">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <div>
+                            <p class="about-item-title">What we install</p>
+                            <p class="about-item-text">CCTV, NVR/DVR, IP cameras, access control, intercoms, cabling, and remote viewing.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-item-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div>
+                            <p class="about-item-title">How we work</p>
+                            <p class="about-item-text">Survey, design, install, test, and hand over with simple training.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-item-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <p class="about-item-title">Best fit</p>
+                            <p class="about-item-text">Homes, retail shops, offices, warehouses, and mixed-use commercial spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="about-right-bg">
+                    <img id="about-bg-image" src="" alt="" class="about-right-bg-image" style="display:none;">
+                </div>
+                <div class="about-right-overlay"></div>
+                <div class="about-right-content">
+                    <div class="about-right-top">
+                        <p class="about-right-highlight">Why clients choose us</p>
+                        <h3 class="about-right-title">Designed for reliability, not just looks.</h3>
+                        <p class="about-right-description">We focus on neat cable management, practical camera placement, simple mobile viewing, and systems sized to the property.</p>
+                    </div>
+                    <div id="about-highlights" class="about-right-boxes">
+                        <div class="about-right-box">
+                            <p class="about-right-box-label">Mission</p>
+                            <p class="about-right-box-content">Make security simple, dependable, and worth the investment.</p>
+                        </div>
+                        <div class="about-right-box">
+                            <p class="about-right-box-label">Focus</p>
+                            <p class="about-right-box-content">Clear footage, strong coverage, and a clean installation finish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-header" data-aos="fade-up">
+            <p id="services-label" class="section-label">Services</p>
+            <h2 id="services-title" class="section-title">Everything you need to secure a property properly.</h2>
+            <div class="section-divider"></div>
+            <p id="services-description" class="section-description">We do more than install cameras. We help design a complete security plan, then deliver the equipment, wiring, setup, and support to keep it working day after day.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h3 class="service-title">CCTV Camera Installation</h3>
+                <p class="service-description">Indoor and outdoor cameras with the right field of view, lighting support, and mounting height for clear evidence capture.</p>
+                <ul class="service-features">
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Dome, bullet, PTZ, and turret options</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Color night vision and motion alerts</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Mobile app viewing and playback</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-building-shield"></i>
+                </div>
+                <h3 class="service-title">Commercial Security Design</h3>
+                <p class="service-description">Systems for offices, warehouses, retail, and community properties where uptime, reliability, and coverage matter most.</p>
+                <ul class="service-features">
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Multi-zone coverage planning</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Scalable NVR/DVR and PoE builds</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Record retention and storage planning</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+                <h3 class="service-title">Remote Monitoring</h3>
+                <p class="service-description">Stay connected to your property with live view, event history, and playback from your phone, tablet, or desktop.</p>
+                <ul class="service-features">
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Mobile and desktop access</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Event notification setup</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Secure remote configuration</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h3 class="service-title">Maintenance & Upgrades</h3>
+                <p class="service-description">Refresh older systems, replace faulty hardware, improve image quality, and expand coverage without rebuilding everything.</p>
+                <ul class="service-features">
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Health checks and troubleshooting</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Camera replacement and expansion</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Storage, network, and cabling fixes</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <h3 class="service-title">Structured Cabling</h3>
+                <p class="service-description">We build the backbone that keeps your system stable, neat, and easy to manage with proper network and power routing.</p>
+                <ul class="service-features">
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Clean cable paths and labeling</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>PoE-ready network layouts</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>CCTV-friendly rack planning</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="service-title">Custom Security Packages</h3>
+                <p class="service-description">Tell us the size of the property and your concerns, and we can build a setup that fits exactly what you need.</p>
+                <ul class="service-features">
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Site-specific equipment planning</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Scalable for future expansion</li>
+                    <li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>Budget-conscious recommendations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Project Gallery -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+            <div class="section-header" data-aos="fade-up">
+                <p id="portfolio-label" class="section-label">Project gallery</p>
+                <h2 id="portfolio-title" class="section-title">Selected <span class="text-brand-red">project photos</span> showcasing the quality and scope of our work.</h2>
+                <div class="section-divider"></div>
+                <p id="portfolio-description" class="section-description">This gallery showcases selected project visuals that reflect the quality, professionalism, and scope of our work.</p>
+            </div>
+
+            <p id="gallery-status" class="section-description">Loading gallery images from the database...</p>
+            <div id="gallery-grid" class="gallery-grid"></div>
+
+            <div class="portfolio-actions">
+                <a href="otherpage.html" class="btn btn-primary">See All Projects</a>
+                <a href="#contact" class="btn btn-secondary">Want a similar setup? Contact us</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="gallery-modal" class="gallery-modal hidden opacity-0 pointer-events-none">
+        <div id="gallery-modal-backdrop" class="gallery-modal-backdrop"></div>
+        <div class="gallery-modal-content">
+            <div class="gallery-modal-image-section">
+                <img id="gallery-modal-image" src="" alt="" class="gallery-modal-image">
+            </div>
+            <div class="gallery-modal-content-section">
+                <div class="gallery-modal-header">
+                    <div>
+                        <!-- <p class="section-label">Sample gallery</p> -->
+                        <h3 id="gallery-modal-title" class="gallery-modal-title">Title</h3>
+                    </div>
+                    <button id="gallery-modal-close" type="button" class="gallery-modal-close">Close</button>
+                </div>
+                <p id="gallery-modal-description" class="gallery-modal-description"></p>
+                <div class="gallery-modal-features-section">
+                    <p class="gallery-modal-features-label">What this setup highlights</p>
+                    <ul id="gallery-modal-features" class="gallery-modal-features"></ul>
+                </div>
+                <div class="gallery-modal-use-box">
+                    <p class="gallery-modal-use-label">Best fit</p>
+                    <p id="gallery-modal-use" class="gallery-modal-use-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inquiry / Contact Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-bg-accent-red"></div>
+        <div class="contact-bg-accent-blue"></div>
+        <div class="contact-container">
+            <div class="contact-box">
+                <div class="contact-left" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-left-bg-accent"></div>
+                    <div class="contact-left-content">
+                        <p id="contact-label" class="contact-label">Contact</p>
+                        <h3 id="contact-title" class="contact-title">Let's secure <span class="contact-title-accent">your space.</span></h3>
+                        <p id="contact-description" class="contact-description">Send us an inquiry today. We provide free estimates, practical recommendations, and comprehensive site surveys for new installs or upgrades.</p>
+
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-info-label">Phone</p>
+                                    <p id="contact-phone" class="contact-info-text">+1 (234) 567-890</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-info-label">Email</p>
+                                    <p id="contact-email" class="contact-info-text">inquiry@chesthertech.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-info-label">Coverage</p>
+                                    <p id="contact-coverage" class="contact-info-text">Residential, commercial, and industrial properties</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <p class="contact-socials-label">Direct chat</p>
+                        <div class="contact-socials-buttons">
+                            <a id="contact-whatsapp" href="https://wa.me/1234567890" target="_blank" class="contact-social-btn">
+                                <i class="fa-brands fa-whatsapp contact-social-icon"></i> Chat on WhatsApp
+                            </a>
+                            <a id="contact-messenger" href="https://m.me/yourpage" target="_blank" class="contact-social-btn">
+                                <i class="fa-brands fa-facebook-messenger contact-social-icon"></i> Message on Messenger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <h3 class="contact-form-title">Send an inquiry form</h3>
+                    <p class="contact-form-description">Tell us your property type, number of cameras, and any access-control or remote-viewing needs.</p>
+
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Full Name <span class="form-label-required">*</span></label>
+                                <input type="text" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Contact Number <span class="form-label-required">*</span></label>
+                                <input type="tel" required class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Property Type</label>
+                            <select class="form-select">
+                                <option>Residential Home / Apartment</option>
+                                <option>Small Business / Retail</option>
+                                <option>Corporate Office</option>
+                                <option>Warehouse / Industrial</option>
+                                <option>School / Community Property</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Message / Special Requirements <span class="form-label-required">*</span></label>
+                            <textarea rows="4" required placeholder="Example: I need 4 cameras outside my house, remote viewing, and a small NVR setup." class="form-textarea"></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-title">ChestherTech</h3>
+                <p id="footer-description" class="footer-description">Professional security systems for homes, offices, and businesses.</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 ChestherTech. All rights reserved. | <a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="admin/login.php" class="admin-easter-egg" aria-label="Admin panel" title="Admin panel"></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 80
+        });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        const galleryGrid = document.getElementById('gallery-grid');
+        const servicesGrid = document.querySelector('.services-grid');
+        const aboutItemsGrid = document.getElementById('about-items');
+        const aboutHighlightsGrid = document.getElementById('about-highlights');
+        const galleryStatus = document.getElementById('gallery-status');
+        const galleryModal = document.getElementById('gallery-modal');
+        const galleryModalBackdrop = document.getElementById('gallery-modal-backdrop');
+        const galleryModalClose = document.getElementById('gallery-modal-close');
+        const galleryModalContent = document.querySelector('.gallery-modal-content');
+        const galleryModalImage = document.getElementById('gallery-modal-image');
+        const galleryModalTitle = document.getElementById('gallery-modal-title');
+        const galleryModalDescription = document.getElementById('gallery-modal-description');
+        const galleryModalFeatures = document.getElementById('gallery-modal-features');
+        const galleryModalUse = document.getElementById('gallery-modal-use');
+        const galleryModalPanel = galleryModal.querySelector('.gallery-modal-content');
+        let galleryModalCloseTimer = null;
+
+        function applyGalleryModalMobileLayout() {
+            if (!galleryModalContent) {
+                return;
+            }
+
+            if (window.innerWidth < 768) {
+                galleryModalContent.style.height = 'calc(100vh - 1.5rem)';
+                galleryModalContent.style.maxHeight = 'calc(100vh - 1.5rem)';
+                galleryModalContent.style.overflowY = 'auto';
+                galleryModalContent.style.webkitOverflowScrolling = 'touch';
+            } else {
+                galleryModalContent.style.height = '';
+                galleryModalContent.style.maxHeight = '';
+                galleryModalContent.style.overflowY = '';
+                galleryModalContent.style.webkitOverflowScrolling = '';
+            }
+        }
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function buildGalleryTile(item, index) {
+            const features = Array.isArray(item.features) ? item.features : [];
+            const featureText = features.join('|');
+            const delay = 100 + (index * 100);
+
+            return '<button type="button" class="gallery-item" data-aos="zoom-in" data-aos-delay="' + delay + '" data-gallery-title="' + escapeHtml(item.title) + '" data-gallery-image="' + escapeHtml(item.image) + '" data-gallery-alt="' + escapeHtml(item.alt) + '" data-gallery-description="' + escapeHtml(item.description) + '" data-gallery-features="' + escapeHtml(featureText) + '" data-gallery-use="' + escapeHtml(item.use) + '">' +
+                '<img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.alt) + '" class="gallery-item-image">' +
+                '<div class="gallery-item-overlay">' +
+                    '<h4 class="gallery-item-title">' + escapeHtml(item.title) + '</h4>' +
+                    '<p class="gallery-item-subtitle">' + escapeHtml(item.use) + '</p>' +
+                '</div>' +
+            '</button>';
+        }
+
+        function renderGallery(items) {
+            if (!Array.isArray(items) || items.length === 0) {
+                galleryStatus.style.display = 'block';
+                galleryStatus.textContent = 'No gallery images have been uploaded yet. Use the admin upload page to add the first one.';
+                galleryGrid.innerHTML = '';
+                return;
+            }
+
+            galleryStatus.style.display = 'none';
+            galleryStatus.textContent = '';
+            galleryGrid.innerHTML = items.map(function(item, index) {
+                return buildGalleryTile(item, index);
+            }).join('');
+
+            if (window.AOS && typeof window.AOS.refresh === 'function') {
+                window.AOS.refresh();
+            }
+        }
+
+        function openGalleryModal(tile) {
+            const features = (tile.dataset.galleryFeatures || '').split('|').filter(Boolean);
+
+            if (galleryModalCloseTimer) {
+                clearTimeout(galleryModalCloseTimer);
+                galleryModalCloseTimer = null;
+            }
+
+            galleryModalImage.src = tile.dataset.galleryImage || '';
+            galleryModalImage.alt = tile.dataset.galleryAlt || tile.dataset.galleryTitle || 'Gallery image';
+            galleryModalTitle.textContent = tile.dataset.galleryTitle || 'Project details';
+            galleryModalDescription.textContent = tile.dataset.galleryDescription || '';
+            galleryModalUse.textContent = tile.dataset.galleryUse || '';
+            galleryModalFeatures.innerHTML = features.map(function(feature) {
+                return '<li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-brand-red"></span><span>' + feature + '</span></li>';
+            }).join('');
+
+            galleryModal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+
+            requestAnimationFrame(function() {
+                galleryModal.classList.remove('opacity-0', 'pointer-events-none');
+                galleryModal.classList.add('opacity-100', 'pointer-events-auto');
+            });
+        }
+
+        function closeGalleryModal() {
+            applyGalleryModalMobileLayout();
+            document.body.classList.remove('overflow-hidden');
+            galleryModal.classList.add('opacity-0', 'pointer-events-none');
+            galleryModal.classList.remove('opacity-100', 'pointer-events-auto');
+            applyGalleryModalMobileLayout();
+
+            galleryModalCloseTimer = setTimeout(function() {
+                galleryModal.classList.add('hidden');
+            }, 300);
+        }
+
+        galleryGrid.addEventListener('click', function(event) {
+            const tile = event.target.closest('[data-gallery-title]');
+
+            if (!tile || !galleryGrid.contains(tile)) {
+                return;
+            }
+
+            openGalleryModal(tile);
+        });
+
+        fetch('api/gallery.php')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Gallery request failed');
+                }
+
+                return response.json();
+            })
+            .then(function(data) {
+                if (!data || data.success !== true) {
+                    throw new Error('Gallery data unavailable');
+                }
+
+                renderGallery(data.images || []);
+            })
+            .catch(function() {
+                galleryStatus.style.display = 'block';
+                galleryStatus.textContent = 'The gallery could not load right now. Please upload images after the database is connected.';
+                galleryGrid.innerHTML = '';
+            });
+
+        function updateText(id, value) {
+            if (!value) {
+                return;
+            }
+
+            const element = document.getElementById(id);
+            if (element) {
+                element.textContent = value;
+            }
+        }
+
+        function updateLink(id, value) {
+            if (!value) {
+                return;
+            }
+
+            const element = document.getElementById(id);
+            if (element) {
+                element.href = value;
+            }
+        }
+
+        function updateImage(id, value) {
+            const element = document.getElementById(id);
+            if (!element || !value) {
+                return;
+            }
+
+            element.src = value;
+            element.style.display = 'block';
+        }
+
+        function renderServiceCards(items) {
+            if (!servicesGrid || !Array.isArray(items) || items.length === 0) {
+                return;
+            }
+
+            servicesGrid.innerHTML = items.map(function(item, index) {
+                const features = Array.isArray(item.features) ? item.features : [];
+                const delay = 100 + (index * 100);
+
+                return '<div class="service-card" data-aos="fade-up" data-aos-delay="' + delay + '">' +
+                    '<div class="service-icon-box"><i class="' + escapeHtml(item.icon_class || 'fa-solid fa-shield-halved') + '"></i></div>' +
+                    '<h3 class="service-title">' + escapeHtml(item.title || '') + '</h3>' +
+                    '<p class="service-description">' + escapeHtml(item.description || '') + '</p>' +
+                    '<ul class="service-features">' + features.map(function(feature) {
+                        return '<li class="service-feature"><i class="fa-solid fa-circle-check text-brand-red"></i>' + escapeHtml(feature) + '</li>';
+                    }).join('') + '</ul>' +
+                '</div>';
+            }).join('');
+
+            if (window.AOS && typeof window.AOS.refresh === 'function') {
+                window.AOS.refresh();
+            }
+        }
+
+        function renderAboutItems(items, highlights) {
+            if (aboutItemsGrid && Array.isArray(items) && items.length > 0) {
+                aboutItemsGrid.innerHTML = items.map(function(item) {
+                    return '<div class="about-item">' +
+                        '<div class="about-item-icon">' +
+                            '<i class="' + escapeHtml(item.icon_class || 'fa-solid fa-circle-check') + '"></i>' +
+                        '</div>' +
+                        '<div>' +
+                            '<p class="about-item-title">' + escapeHtml(item.title || '') + '</p>' +
+                            '<p class="about-item-text">' + escapeHtml(item.body || '') + '</p>' +
+                        '</div>' +
+                    '</div>';
+                }).join('');
+            }
+
+            if (aboutHighlightsGrid && Array.isArray(highlights) && highlights.length > 0) {
+                aboutHighlightsGrid.innerHTML = highlights.map(function(item) {
+                    return '<div class="about-right-box">' +
+                        '<p class="about-right-box-label">' + escapeHtml(item.label || '') + '</p>' +
+                        '<p class="about-right-box-content">' + escapeHtml(item.body || '') + '</p>' +
+                    '</div>';
+                }).join('');
+            }
+        }
+
+        fetch('api/services.php')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Services request failed');
+                }
+
+                return response.json();
+            })
+            .then(function(data) {
+                if (!data || data.success !== true) {
+                    return;
+                }
+
+                renderServiceCards(data.services || []);
+            })
+            .catch(function() {
+                return;
+            });
+
+        fetch('api/about.php')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('About request failed');
+                }
+
+                return response.json();
+            })
+            .then(function(data) {
+                if (!data || data.success !== true) {
+                    return;
+                }
+
+                renderAboutItems(data.items || [], data.highlights || []);
+            })
+            .catch(function() {
+                return;
+            });
+
+        fetch('api/site-content.php')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Content request failed');
+                }
+
+                return response.json();
+            })
+            .then(function(data) {
+                if (!data || data.success !== true) {
+                    return;
+                }
+
+                const blocks = data.blocks || {};
+                const contact = data.contact || {};
+
+                updateText('hero-badge', blocks.hero_badge && (blocks.hero_badge.title || blocks.hero_badge.body));
+                updateText('hero-title', blocks.hero_title && (blocks.hero_title.body || blocks.hero_title.title));
+                updateText('hero-description', blocks.hero_description && (blocks.hero_description.body || blocks.hero_description.title));
+                updateText('about-label', blocks.about_label && (blocks.about_label.title || blocks.about_label.body));
+                updateText('about-title', blocks.about_title && (blocks.about_title.body || blocks.about_title.title));
+                updateText('about-description', blocks.about_description && (blocks.about_description.body || blocks.about_description.title));
+                updateText('services-label', blocks.services_label && (blocks.services_label.title || blocks.services_label.body));
+                updateText('services-title', blocks.services_title && (blocks.services_title.body || blocks.services_title.title));
+                updateText('services-description', blocks.services_description && (blocks.services_description.body || blocks.services_description.title));
+                updateText('portfolio-label', blocks.portfolio_label && (blocks.portfolio_label.title || blocks.portfolio_label.body));
+                updateText('portfolio-title', blocks.portfolio_title && (blocks.portfolio_title.body || blocks.portfolio_title.title));
+                updateText('portfolio-description', blocks.portfolio_description && (blocks.portfolio_description.body || blocks.portfolio_description.title));
+                updateText('contact-label', blocks.contact_label && (blocks.contact_label.title || blocks.contact_label.body));
+                updateText('contact-title', blocks.contact_title && (blocks.contact_title.body || blocks.contact_title.title));
+                updateText('contact-description', blocks.contact_description && (blocks.contact_description.body || blocks.contact_description.title));
+                updateText('footer-description', blocks.footer_description && (blocks.footer_description.body || blocks.footer_description.title));
+
+                updateImage('hero-bg-image', blocks.hero_bg_image && (blocks.hero_bg_image.body || blocks.hero_bg_image.title));
+                updateImage('about-bg-image', blocks.about_bg_image && (blocks.about_bg_image.body || blocks.about_bg_image.title));
+
+                updateText('contact-phone', contact.phone);
+                updateText('contact-email', contact.email);
+                updateText('contact-coverage', contact.coverage);
+                updateLink('contact-whatsapp', contact.whatsapp_url);
+                updateLink('contact-messenger', contact.messenger_url);
+            })
+            .catch(function() {
+                return;
+            });
+
+        galleryModalBackdrop.addEventListener('click', closeGalleryModal);
+        galleryModalClose.addEventListener('click', closeGalleryModal);
+
+        window.addEventListener('resize', applyGalleryModalMobileLayout);
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && !galleryModal.classList.contains('hidden')) {
+                closeGalleryModal();
+                return;
+            }
+
+            if (event.ctrlKey && event.altKey && event.key.toLowerCase() === 'u') {
+                window.location.href = 'admin/login.php';
+            }
+        });
+    </script>
+</body>
+</html>

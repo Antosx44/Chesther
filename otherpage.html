@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChestherTech | All Projects</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/otherpage.css">
+</head>
+<body class="op-body">
+    <nav class="op-nav">
+        <div class="op-nav-inner">
+            <div>
+                <p class="op-nav-label">ChestherTech</p>
+                <h1 class="op-nav-title">All Projects</h1>
+            </div>
+            <a href="index.html#portfolio" class="op-back-link">
+                <i class="fa-solid fa-arrow-left"></i> Back to Gallery
+            </a>
+        </div>
+    </nav>
+
+    <section class="op-hero">
+        <div class="op-hero-bg">
+            <div class="op-hero-gradient"></div>
+            <div class="op-hero-red-glow"></div>
+            <div class="op-hero-cyan-glow"></div>
+        </div>
+        <div class="op-hero-inner">
+            <div class="op-hero-copy">
+                <p id="op-project-label" class="op-section-label">Project showcase</p>
+                <h2 id="op-project-title" class="op-hero-title">A fuller look at the systems we build.</h2>
+                <p id="op-project-description" class="op-hero-text">
+                    These sample projects show how we adapt coverage, equipment layout, and installation style for different property types.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="op-main">
+        <div id="op-project-status" class="op-project-status">Loading project details...</div>
+        <div class="op-project-grid">
+        </div>
+
+        <div class="op-summary-card">
+            <div>
+                <p class="op-section-label">What clients get</p>
+                <h3 class="op-summary-title">Clear planning, tidy installation, and reliable day-to-day use.</h3>
+            </div>
+            <div class="op-summary-text">
+                We shape the project around the property, whether the goal is visibility, deterrence, remote monitoring, or a clean professional finish.
+            </div>
+        </div>
+
+        <div class="op-survey-action">
+            <button id="survey-modal-open" type="button" class="op-survey-btn">Request a Free Survey</button>
+        </div>
+    </main>
+
+    <div id="project-modal" class="op-modal hidden opacity-0 pointer-events-none">
+        <div id="project-modal-backdrop" class="op-modal-backdrop"></div>
+        <div class="op-modal-panel op-project-modal-panel scale-95 translate-y-4">
+            <div class="op-project-modal-media">
+                <img id="project-modal-image" src="" alt="" class="op-project-modal-image">
+            </div>
+            <div class="op-project-modal-content">
+                <div class="op-modal-header op-project-modal-header">
+                    <div>
+                        <p id="project-modal-use" class="op-section-label">Project detail</p>
+                        <h2 id="project-modal-title" class="op-modal-title">Project title</h2>
+                    </div>
+                    <button id="project-modal-close" type="button" class="op-modal-close">Close</button>
+                </div>
+                <p id="project-modal-description" class="op-project-modal-description"></p>
+                <div class="op-project-modal-meta">
+                    <p class="op-project-modal-meta-label">Summary</p>
+                    <p id="project-modal-summary" class="op-project-modal-meta-text"></p>
+                </div>
+                <div class="op-project-modal-features-wrap">
+                    <p class="op-project-modal-features-label">Included details</p>
+                    <ul id="project-modal-features" class="op-project-modal-features"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="survey-modal" class="op-modal hidden opacity-0 pointer-events-none">
+        <div id="survey-modal-backdrop" class="op-modal-backdrop"></div>
+        <div class="op-modal-panel op-survey-modal-panel scale-95 translate-y-4">
+            <div class="op-survey-modal-aside">
+                <div class="op-survey-modal-aside-content">
+                    <p class="op-section-label">Free survey</p>
+                    <h2 class="op-modal-title">Tell us about your property.</h2>
+                    <p class="op-survey-modal-text">Share a few details and we can prepare a practical plan for cameras, coverage, and equipment layout.</p>
+                    <div class="op-survey-modal-points">
+                        <div class="op-survey-modal-point">
+                            <span class="op-survey-modal-point-mark"></span>
+                            <span>We review the property type and access points.</span>
+                        </div>
+                        <div class="op-survey-modal-point">
+                            <span class="op-survey-modal-point-mark"></span>
+                            <span>We suggest the right camera count and placement.</span>
+                        </div>
+                        <div class="op-survey-modal-point">
+                            <span class="op-survey-modal-point-mark"></span>
+                            <span>You get a cleaner, more practical install plan.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="op-survey-modal-body">
+                <div class="op-survey-modal-header">
+                    <button id="survey-modal-close" type="button" class="op-modal-close op-survey-modal-close">Close</button>
+                </div>
+                <div class="op-survey-modal-content">
+                    <form id="survey-form" class="op-form">
+                    <div class="op-form-grid">
+                        <div>
+                            <label class="op-form-label">Full Name</label>
+                            <input type="text" class="op-form-input">
+                        </div>
+                        <div>
+                            <label class="op-form-label">Contact Number</label>
+                            <input type="tel" class="op-form-input">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="op-form-label">Property Type</label>
+                        <select class="op-form-input">
+                            <option>Residential Home / Apartment</option>
+                            <option>Small Business / Retail</option>
+                            <option>Corporate Office</option>
+                            <option>Warehouse / Industrial</option>
+                            <option>School / Community Property</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="op-form-label">Message</label>
+                        <textarea rows="4" class="op-form-input" placeholder="Tell us how many cameras you need and what areas should be covered."></textarea>
+                    </div>
+                    <p id="survey-form-error" class="op-form-error hidden" role="alert" aria-live="polite"></p>
+                    <div class="op-form-actions">
+                        <button id="survey-modal-cancel" type="button" class="op-btn-cancel">Cancel</button>
+                        <button type="submit" class="op-btn-submit">Send Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const projectLabel = document.getElementById('op-project-label');
+        const projectTitle = document.getElementById('op-project-title');
+        const projectDescription = document.getElementById('op-project-description');
+        const projectStatus = document.getElementById('op-project-status');
+        const projectGrid = document.querySelector('.op-project-grid');
+        const projectModal = document.getElementById('project-modal');
+        const projectModalBackdrop = document.getElementById('project-modal-backdrop');
+        const projectModalClose = document.getElementById('project-modal-close');
+        const projectModalImage = document.getElementById('project-modal-image');
+        const projectModalUse = document.getElementById('project-modal-use');
+        const projectModalTitle = document.getElementById('project-modal-title');
+        const projectModalDescription = document.getElementById('project-modal-description');
+        const projectModalSummary = document.getElementById('project-modal-summary');
+        const projectModalFeatures = document.getElementById('project-modal-features');
+        const projectModalPanel = projectModal.querySelector('.op-modal-panel');
+        const surveyModal = document.getElementById('survey-modal');
+        const surveyModalOpen = document.getElementById('survey-modal-open');
+        const surveyModalClose = document.getElementById('survey-modal-close');
+        const surveyModalCancel = document.getElementById('survey-modal-cancel');
+        const surveyModalBackdrop = document.getElementById('survey-modal-backdrop');
+        const surveyModalPanel = surveyModal.querySelector('.op-modal-panel');
+        const surveyForm = document.getElementById('survey-form');
+        const surveyFormError = document.getElementById('survey-form-error');
+        const surveyFormInputs = surveyForm ? surveyForm.querySelectorAll('.op-form-input') : [];
+        let surveyModalCloseTimer = null;
+
+        function applyPhoneModalLayout(panel, stacked) {
+            if (!panel) {
+                return;
+            }
+
+            if (window.innerWidth < 768) {
+                panel.style.maxHeight = 'calc(100vh - 1.5rem)';
+                panel.style.overflowY = 'auto';
+                panel.style.webkitOverflowScrolling = 'touch';
+                panel.style.display = stacked ? 'block' : 'block';
+            } else {
+                panel.style.maxHeight = '';
+                panel.style.overflowY = '';
+                panel.style.webkitOverflowScrolling = '';
+                panel.style.display = '';
+            }
+        }
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function getSummary(text) {
+            const cleaned = String(text || '').replace(/\s+/g, ' ').trim();
+            if (!cleaned) {
+                return '';
+            }
+
+            const sentence = cleaned.split(/(?<=[.!?])\s+/)[0];
+            return sentence.length > 180 ? sentence.slice(0, 177).trim() + '…' : sentence;
+        }
+
+        function openProjectModal(item) {
+            const features = Array.isArray(item.features) ? item.features : [];
+            const summary = getSummary(item.description || item.use || '');
+
+            projectModalImage.src = item.image || '';
+            projectModalImage.alt = item.alt || item.title || 'Project image';
+            projectModalUse.textContent = 'Best fit';
+            projectModalTitle.textContent = item.title || 'Project details';
+            projectModalDescription.textContent = item.description || '';
+            projectModalSummary.textContent = getSummary(item.use || '') || summary || '';
+            projectModalFeatures.innerHTML = features.length > 0 ? features.map(function(feature) {
+                return '<li>' + escapeHtml(feature) + '</li>';
+            }).join('') : '<li>No extra project notes were provided for this item.</li>';
+
+            if (!projectModal.classList.contains('hidden')) {
+                return;
+            }
+
+            projectModal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            applyPhoneModalLayout(projectModalPanel, false);
+
+            requestAnimationFrame(function() {
+                projectModal.classList.remove('opacity-0', 'pointer-events-none');
+                projectModal.classList.add('opacity-100');
+                projectModalPanel.classList.remove('scale-95', 'translate-y-4');
+                projectModalPanel.classList.add('scale-100', 'translate-y-0');
+            });
+        }
+
+        function closeProjectModal() {
+            document.body.classList.remove('overflow-hidden');
+            projectModal.classList.add('opacity-0', 'pointer-events-none');
+            projectModal.classList.remove('opacity-100');
+            projectModalPanel.classList.add('scale-95', 'translate-y-4');
+            projectModalPanel.classList.remove('scale-100', 'translate-y-0');
+            applyPhoneModalLayout(projectModalPanel, false);
+
+            setTimeout(function() {
+                projectModal.classList.add('hidden');
+            }, 300);
+        }
+
+        function renderProjectCards(items) {
+            if (!Array.isArray(items) || items.length === 0) {
+                projectStatus.textContent = 'No project details have been added yet. Upload gallery images in the admin panel to populate this page.';
+                projectGrid.innerHTML = '';
+                return;
+            }
+
+            projectStatus.textContent = '';
+            projectGrid.innerHTML = items.map(function(item, index) {
+                const delay = 100 + (index * 100);
+                const summary = getSummary(item.description || item.use || '');
+
+                return '<button type="button" class="op-project-card op-project-card-button" data-aos="fade-up" data-aos-delay="' + delay + '" data-project-index="' + index + '">' +
+                    '<img src="' + escapeHtml(item.image || '') + '" alt="' + escapeHtml(item.alt || item.title || 'Project image') + '" class="op-project-image">' +
+                    '<div class="op-project-body">' +
+                        '<p class="op-section-label">Project summary</p>' +
+                        '<h3 class="op-project-title">' + escapeHtml(item.title || '') + '</h3>' +
+                        '<p class="op-project-text">' + escapeHtml(summary) + '</p>' +
+                        '<span class="op-project-view-link">View full details</span>' +
+                    '</div>' +
+                '</button>';
+            }).join('');
+
+            if (window.AOS && typeof window.AOS.refresh === 'function') {
+                window.AOS.refresh();
+            }
+        }
+
+        projectGrid.addEventListener('click', function(event) {
+            const card = event.target.closest('[data-project-index]');
+            if (!card || !projectGrid.contains(card)) {
+                return;
+            }
+
+            const items = window.__projectItems || [];
+            const projectIndex = Number(card.getAttribute('data-project-index'));
+            const item = items[projectIndex];
+            if (item) {
+                openProjectModal(item);
+            }
+        });
+
+        fetch('api/gallery.php')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Gallery request failed');
+                }
+
+                return response.json();
+            })
+            .then(function(data) {
+                if (!data || data.success !== true) {
+                    throw new Error('Gallery data unavailable');
+                }
+
+                window.__projectItems = data.images || [];
+                renderProjectCards(data.images || []);
+            })
+            .catch(function() {
+                projectStatus.textContent = 'The project gallery could not load right now. Check the database connection or add gallery items from the admin panel.';
+                projectGrid.innerHTML = '';
+            });
+
+        fetch('api/site-content.php')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Content request failed');
+                }
+
+                return response.json();
+            })
+            .then(function(data) {
+                if (!data || data.success !== true) {
+                    return;
+                }
+
+                const blocks = data.blocks || {};
+                if (blocks.portfolio_label) {
+                    projectLabel.textContent = blocks.portfolio_label.title || blocks.portfolio_label.body || projectLabel.textContent;
+                }
+                if (blocks.portfolio_title) {
+                    projectTitle.textContent = blocks.portfolio_title.body || blocks.portfolio_title.title || projectTitle.textContent;
+                }
+                if (blocks.portfolio_description) {
+                    projectDescription.textContent = blocks.portfolio_description.body || blocks.portfolio_description.title || projectDescription.textContent;
+                }
+            })
+            .catch(function() {
+                return;
+            });
+
+        projectModalBackdrop.addEventListener('click', closeProjectModal);
+        projectModalClose.addEventListener('click', closeProjectModal);
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && !projectModal.classList.contains('hidden')) {
+                closeProjectModal();
+                return;
+            }
+
+            if (event.key === 'Escape' && !surveyModal.classList.contains('hidden')) {
+                closeSurveyModal();
+                return;
+            }
+        });
+
+        function openSurveyModal() {
+            if (surveyModalCloseTimer) {
+                clearTimeout(surveyModalCloseTimer);
+                surveyModalCloseTimer = null;
+            }
+
+            surveyModal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            applyPhoneModalLayout(surveyModalPanel, true);
+
+            requestAnimationFrame(function() {
+                surveyModal.classList.remove('opacity-0', 'pointer-events-none');
+                surveyModal.classList.add('opacity-100');
+                surveyModalPanel.classList.remove('scale-95', 'translate-y-4');
+                surveyModalPanel.classList.add('scale-100', 'translate-y-0');
+            });
+        }
+
+        function closeSurveyModal() {
+            document.body.classList.remove('overflow-hidden');
+            surveyModal.classList.add('opacity-0', 'pointer-events-none');
+            surveyModal.classList.remove('opacity-100');
+            surveyModalPanel.classList.add('scale-95', 'translate-y-4');
+            surveyModalPanel.classList.remove('scale-100', 'translate-y-0');
+            applyPhoneModalLayout(surveyModalPanel, true);
+            if (surveyFormError) {
+                surveyFormError.classList.add('hidden');
+                surveyFormError.textContent = '';
+            }
+
+            surveyModalCloseTimer = setTimeout(function() {
+                surveyModal.classList.add('hidden');
+            }, 300);
+        }
+
+        if (surveyForm) {
+            surveyForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const nameInput = surveyForm.querySelector('input[type="text"]');
+                const contactInput = surveyForm.querySelector('input[type="tel"]');
+                const messageInput = surveyForm.querySelector('textarea');
+                const hasDetails = [nameInput, contactInput, messageInput].some(function(input) {
+                    return input && String(input.value || '').trim() !== '';
+                });
+
+                if (!hasDetails) {
+                    if (surveyFormError) {
+                        surveyFormError.textContent = 'Please add at least your name, contact number, or a message before sending.';
+                        surveyFormError.classList.remove('hidden');
+                    }
+
+                    return;
+                }
+
+                if (surveyFormError) {
+                    surveyFormError.classList.add('hidden');
+                    surveyFormError.textContent = '';
+                }
+            });
+
+            surveyFormInputs.forEach(function(input) {
+                input.addEventListener('input', function() {
+                    if (surveyFormError) {
+                        surveyFormError.classList.add('hidden');
+                        surveyFormError.textContent = '';
+                    }
+                });
+            });
+        }
+
+        surveyModalOpen.addEventListener('click', openSurveyModal);
+        surveyModalClose.addEventListener('click', closeSurveyModal);
+        surveyModalCancel.addEventListener('click', closeSurveyModal);
+        surveyModalBackdrop.addEventListener('click', closeSurveyModal);
+
+        window.addEventListener('resize', function() {
+            applyPhoneModalLayout(projectModalPanel, false);
+            applyPhoneModalLayout(surveyModalPanel, true);
+        });
+    </script>
+</body>
+</html>
